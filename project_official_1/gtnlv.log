@@ -1,0 +1,129 @@
+# Copyright (C) 1994-2019, Concept Engineering GmbH.
+# All Rights Reserved.  Cmd=logfile.
+# Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+# License cookie [G|T|S|B|*] for HR="Xilinx Inc."
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+property showattribute 1
+property showcellname true
+property shadowstyle 1
+property gatecellname 2
+property showpinname 2
+property showhierpinname 2
+property showinstname false
+property boxpinsquare 2
+property boxhierpins 2
+property backgroundcolor #F8F8FF
+property boxinstcolor #000000
+property boxcolor0 #000000
+property boxpincolor #000000
+property netcolor #000000
+property buscolor #000000
+property portcolor #000000
+property portnamecolor #000000
+property boxminwidth 50
+property boxminheight 40
+module new gtmodule
+#  * Current module is gtmodule 
+load symbol QUAD v HIERBOX port i0 in port i1 in port i2 in port i3 in port i4 in
+load symbol {CHANNEL PLL} syn BOX port In in port Out out text CPLL -cc 25 0 12
+load symbol {QUAD PLL} syn BOX port In in port Out out text QPLL -cc 25 0 12
+load port REFCLK1_Q0 in -pg 1 -y 121 -x 1 -attr @fillcolor #3a5fcd
+load port REFCLK0_Q0 in -pg 1 -y 191 -x 1 -attr @fillcolor #3a5fcd
+load inst Quad0 QUAD v -pg 1 -y 1 -x 2000 -autohide -attr @cell Quad0 -attr @name {} -attr @fillcolor #d9d9d9
+attribute {pin Quad0 i0 } -attr @name {}
+attribute {pin Quad0 i1 } -attr @name {}
+attribute {pin Quad0 i2 } -attr @name {}
+attribute {pin Quad0 i3 } -attr @name {}
+attribute {pin Quad0 i4 } -attr @name {}
+attribute {hierPin Quad0 i0 } -attr @name {}
+attribute {hierPin Quad0 i1 } -attr @name {}
+attribute {hierPin Quad0 i2 } -attr @name {}
+attribute {hierPin Quad0 i3 } -attr @name {}
+attribute {hierPin Quad0 i4 } -attr @name {}
+load inst cpll.0.3 {CHANNEL PLL} syn -hier Quad0 -pg 1 -y 2 -x 1 -autohide -attr @name {} -attr @cell {} -attr @fillcolor #00868b
+attribute {pin cpll.0.3 In} -attr @name {}
+attribute {pin cpll.0.3 Out} -attr @name {}
+load symbol GTX_X0Y3 syn HIERGEN port TX in port RX in
+load inst GT.0.3 GTX_X0Y3 syn -hier Quad0 -pg 1 -y 2 -x 2 -attr @name {} -attr @fillcolor #7a7a7a
+load inst cpll.0.2 {CHANNEL PLL} syn -hier Quad0 -pg 1 -y 87 -x 1 -autohide -attr @name {} -attr @cell {} -attr @fillcolor #00868b
+attribute {pin cpll.0.2 In} -attr @name {}
+attribute {pin cpll.0.2 Out} -attr @name {}
+load symbol GTX_X0Y2 syn HIERGEN port TX in port RX in
+load inst GT.0.2 GTX_X0Y2 syn -hier Quad0 -pg 1 -y 87 -x 2 -attr @name {} -attr @fillcolor #7a7a7a
+load inst qpll.0 {QUAD PLL} syn -hier Quad0 -pg 1 -y 172 -x 1 -autohide -attr @name {} -attr @cell {} -attr @fillcolor #00868b
+attribute {pin qpll.0 In} -attr @name {}
+attribute {pin qpll.0 Out} -attr @name {}
+load inst cpll.0.1 {CHANNEL PLL} syn -hier Quad0 -pg 1 -y 257 -x 1 -autohide -attr @name {} -attr @cell {} -attr @fillcolor #00868b
+attribute {pin cpll.0.1 In} -attr @name {}
+attribute {pin cpll.0.1 Out} -attr @name {}
+load symbol GTX_X0Y1 syn HIERGEN port TX in port RX in
+load inst GT.0.1 GTX_X0Y1 syn -hier Quad0 -pg 1 -y 257 -x 2 -attr @name {} -attr @fillcolor #7a7a7a
+load inst cpll.0.0 {CHANNEL PLL} syn -hier Quad0 -pg 1 -y 342 -x 1 -autohide -attr @name {} -attr @cell {} -attr @fillcolor #00868b
+attribute {pin cpll.0.0 In} -attr @name {}
+attribute {pin cpll.0.0 Out} -attr @name {}
+load symbol GTX_X0Y0 syn HIERGEN port TX in port RX in
+load inst GT.0.0 GTX_X0Y0 syn -hier Quad0 -pg 1 -y 342 -x 2 -attr @name {} -attr @fillcolor #7a7a7a
+load net net.REFCLK1_Q0 -port REFCLK1_Q0 -pin Quad0 i0
+load net net.Quad0.cpll.0.Tx_Rx -hierPin Quad0 i0 -pin cpll.0.0 In
+load net net.cpll.0.0.tx_rx -pin cpll.0.0 Out -pin GT.0.0 TX
+attribute {inst cpll.0.0} -attr @fillcolor #cccc00
+attribute {inst GT.0.0} -attr @fillcolor #cccc00
+load net net.REFCLK1_Q0 -port REFCLK1_Q0 -pin Quad0 i0
+load net net.Quad0.cpll.0.Tx_Rx -hierPin Quad0 i0 -pin cpll.0.0 In
+load net net.cpll.0.0.tx_rx -pin cpll.0.0 Out -pin GT.0.0 RX
+attribute {inst cpll.0.0} -attr @fillcolor #cccc00
+attribute {inst GT.0.0} -attr @fillcolor #cccc00
+show
+# Starting Split Pages                                                   10.52
+# Split Pages 12 Comps, 3 Nets 0 NetBundles                              10.52
+# KwayPart started for 12 comps, 3 nets                                  10.52
+# Init done: 1 nodes (1 locked nodes), 0 edges                           10.52
+# Startpart done: 1 parts                                                10.52
+# KwayPart done                                                          10.52
+# End of Split Pages: 1 pages                                            10.52
+# End of Split Pages                                                     10.52
+# Generating Regions for Page 1:   12 Comps,    3 Nets                   10.52
+# Analyze                                                                10.52
+# Levelize                                                               10.52
+# End of LevelAssign mode=I, 3 Levels, 10 Comps, limit=30000             10.52
+# Nets                                                                   10.52
+# Place                                                                  10.52
+# PlaceNets                                                              10.52
+# SpaceY                                                                 10.52
+# Track                                                                  10.52
+# SpaceX                                                                 10.52
+# Wire                                                                   10.52
+# End of Wire: 2 nets, 2 ch, wire: 9-->9 (0 with wbits)                  10.52
+# End of doGenerate                                                      10.52
+# Analyze                                                                10.52
+# Levelize                                                               10.52
+# End of LevelAssign mode=I, 2 Levels, 3 Comps, limit=30000              10.52
+# Nets                                                                   10.52
+# Place                                                                  10.52
+# PlaceNets                                                              10.52
+# SpaceY                                                                 10.52
+# Track                                                                  10.52
+# SpaceX                                                                 10.52
+# Wire                                                                   10.52
+# End of Wire: 1 nets, 1 ch, wire: 4-->4 (0 with wbits)                  10.52
+# End of doGenerate                                                      10.52
+# End of Generating Regions for Page 1                                   10.52
+scrollpos 84 180
+zoom -x 0 -y 0 0.68
+scrollpos 71 153
+#R 0.68
+center_objects -itemized {inst GT.0.2}
+scrollpos 176 59
+#CMD scrollpos
+#R 176 59
+#CMD scrollpos -10 59
+scrollpos -10 59
+selection -itemized {inst GT.0.0}
+scrollpos -10 59
+scrollpos -10 28
+scrollpos -10 -3
+scrollpos -10 -34
+scrollpos -10 -41
+scrollpos -10 -10
+scrollpos -10 -5

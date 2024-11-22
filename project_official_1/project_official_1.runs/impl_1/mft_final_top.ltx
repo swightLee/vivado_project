@@ -1,0 +1,585 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "125000003"
+                    },
+                    {
+                        "type": "VIO_V2",
+                        "name": "inst_gt/vio_gt_inst",
+                        "spec": "labtools_vio_v3",
+                        "ipName": "vio",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "8643C0CDA41957C4BD3C84C70DE4E162",
+                        "pins": [
+                            {
+                                "name": "probe_in0",
+                                "id": 0,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "inst_gt/rxresetdone_vio_i",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out0",
+                                "id": 1,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "inst_gt/soft_reset_i",
+                                        "isBus": false,
+                                        "parentNetId": 1
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "u_ila_0",
+                        "spec": "labtools_ila_v6",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 1,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "23E7D65A79BC59F7BC47406C1714DFAE",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 2,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "inst_gt/gt0_rxdata_i",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[31]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[30]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[29]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[28]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[27]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[26]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[25]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[24]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[23]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[22]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[21]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[20]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[19]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[18]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[17]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[16]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[15]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[14]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[13]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[12]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[11]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[10]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[9]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[8]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[7]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[6]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[5]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[4]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[3]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[2]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[1]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxdata_i[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 3,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 3,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "inst_gt/gt0_rxcharisk_i",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "inst_gt/gt0_rxcharisk_i[3]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxcharisk_i[2]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxcharisk_i[1]"
+                                            },
+                                            {
+                                                "name": "inst_gt/gt0_rxcharisk_i[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 4,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 3,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "inst_gt/TXCTRL_IN",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "inst_gt/TXCTRL_IN[3]"
+                                            },
+                                            {
+                                                "name": "inst_gt/TXCTRL_IN[2]"
+                                            },
+                                            {
+                                                "name": "inst_gt/TXCTRL_IN[1]"
+                                            },
+                                            {
+                                                "name": "inst_gt/TXCTRL_IN[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 5,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "inst_gt/DATA_FIFO_OUT_GT_IN",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[31]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[30]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[29]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[28]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[27]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[26]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[25]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[24]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[23]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[22]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[21]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[20]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[19]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[18]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[17]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[16]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[15]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[14]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[13]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[12]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[11]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[10]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[9]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[8]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[7]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[6]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[5]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[4]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[3]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[2]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[1]"
+                                            },
+                                            {
+                                                "name": "inst_gt/DATA_FIFO_OUT_GT_IN[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe4",
+                                "id": 6,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 3,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "data_or_k",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "data_or_k[3]"
+                                            },
+                                            {
+                                                "name": "data_or_k[2]"
+                                            },
+                                            {
+                                                "name": "data_or_k[1]"
+                                            },
+                                            {
+                                                "name": "data_or_k[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe5",
+                                "id": 7,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "data_to_mgt",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "data_to_mgt[31]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[30]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[29]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[28]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[27]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[26]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[25]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[24]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[23]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[22]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[21]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[20]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[19]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[18]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[17]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[16]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[15]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[14]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[13]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[12]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[11]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[10]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[9]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[8]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[7]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[6]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[5]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[4]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[3]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[2]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[1]"
+                                            },
+                                            {
+                                                "name": "data_to_mgt[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe6",
+                                "id": 8,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "INST_K_INSERTER/connecting",
+                                        "isBus": false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "parent_nets": [
+                    {
+                        "id": 1,
+                        "name": "inst_gt/vio_gt_inst/inst/PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/probe_out0[0]",
+                        "state_reg": [
+                            {
+                                "name": "inst_gt/gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/FSM_sequential_rx_state_reg[0]",
+                                "states": [
+                                    {
+                                        "name": "RELEASE_PLL_RESET",
+                                        "val": "0011"
+                                    },
+                                    {
+                                        "name": "VERIFY_RECCLK_STABLE",
+                                        "val": "0100"
+                                    },
+                                    {
+                                        "name": "WAIT_FOR_PLL_LOCK",
+                                        "val": "0010"
+                                    },
+                                    {
+                                        "name": "FSM_DONE",
+                                        "val": "1010"
+                                    },
+                                    {
+                                        "name": "ASSERT_ALL_RESETS",
+                                        "val": "0001"
+                                    },
+                                    {
+                                        "name": "INIT",
+                                        "val": "0000"
+                                    },
+                                    {
+                                        "name": "WAIT_RESET_DONE",
+                                        "val": "0111"
+                                    },
+                                    {
+                                        "name": "MONITOR_DATA_VALID",
+                                        "val": "1001"
+                                    },
+                                    {
+                                        "name": "WAIT_FOR_RXUSRCLK",
+                                        "val": "0110"
+                                    },
+                                    {
+                                        "name": "DO_PHASE_ALIGNMENT",
+                                        "val": "1000"
+                                    },
+                                    {
+                                        "name": "RELEASE_MMCM_RESET",
+                                        "val": "0101"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

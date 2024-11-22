@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7k70tfbg484-1" LaunchTime="1713669806">
+  <File Type="ROUTE-PWR" Name="mft_final_top_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="mft_final_top.tcl"/>
+  <File Type="BITSTR-BMM" Name="mft_final_top_bd.bmm"/>
+  <File Type="ROUTE-PWR-SUM" Name="mft_final_top_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="mft_final_top_reports.tcl"/>
+  <File Type="OPT-DCP" Name="mft_final_top_opt.dcp"/>
+  <File Type="OPT-DRC" Name="mft_final_top_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="mft_final_top.hwdef"/>
+  <File Type="PWROPT-DCP" Name="mft_final_top_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="mft_final_top_placed.dcp"/>
+  <File Type="PLACE-IO" Name="mft_final_top_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="mft_final_top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="mft_final_top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="mft_final_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="mft_final_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="mft_final_top.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="mft_final_top_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="mft_final_top.bin"/>
+  <File Type="PHYSOPT-DCP" Name="mft_final_top_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="mft_final_top.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="mft_final_top_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="mft_final_top_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="mft_final_top_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="mft_final_top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="mft_final_top_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="mft_final_top_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="mft_final_top.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="mft_final_top_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="mft_final_top.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="mft_final_top_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="mft_final_top_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="mft_final_top.sysdef"/>
+  <File Type="ROUTE-PWR-RPX" Name="mft_final_top_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="mft_final_top_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="mft_final_top_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="mft_final_top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="mft_final_top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="mft_final_top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="mft_final_top_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="mft_final_top.vdi"/>
+  <File Type="ROUTE-BUS-SKEW" Name="mft_final_top_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="mft_final_top_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="mft_final_top_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="mft_final_top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="mft_final_top_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="mft_final_top.bit"/>
+  <File Type="BITSTR-RBT" Name="mft_final_top.rbt"/>
+  <File Type="BITSTR-NKY" Name="mft_final_top.nky"/>
+  <File Type="BG-DRC" Name="mft_final_top.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/gtwizard_0/gtwizard_0.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_1/project_1.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xci"/>
+        <Attr Name="ImportTime" Val="1713079582"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/IBUFDS32_LVDS_25_DT.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/IBUFDS_LVDS_25_DT.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/IBUFDS_LVDS_25_DT_INV.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clk_40_ buf.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/control_and_state.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fifo_instantiation.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/example_design/support/gtwizard_0_common.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_1/project_1.srcs/sources_1/ip/gtwizard_0/gtwizard_0/example_design/support/gtwizard_0_common.v"/>
+        <Attr Name="ImportTime" Val="1713144486"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/example_design/support/gtwizard_0_common_reset.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_1/project_1.srcs/sources_1/ip/gtwizard_0/gtwizard_0/example_design/support/gtwizard_0_common_reset.v"/>
+        <Attr Name="ImportTime" Val="1713144486"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/example_design/gtwizard_0_exdes.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_1/project_1.srcs/sources_1/ip/gtwizard_0/gtwizard_0/example_design/gtwizard_0_exdes.v"/>
+        <Attr Name="ImportTime" Val="1713144486"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/example_design/support/gtwizard_0_gt_usrclk_source.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_1/project_1.srcs/sources_1/ip/gtwizard_0/gtwizard_0/example_design/support/gtwizard_0_gt_usrclk_source.v"/>
+        <Attr Name="ImportTime" Val="1713144486"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/example_design/support/gtwizard_0_support.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_1/project_1.srcs/sources_1/ip/gtwizard_0/gtwizard_0/example_design/support/gtwizard_0_support.v"/>
+        <Attr Name="ImportTime" Val="1713144486"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/hits_buffer_stretch.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/k_inserter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/stretcher.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/stretcher_32b.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/test_data_generator.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mft_final_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/example_design/gt_rom_init_rx.dat">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_1/project_1.srcs/sources_1/ip/gtwizard_0/gtwizard_0/example_design/gt_rom_init_rx.dat"/>
+        <Attr Name="ImportTime" Val="1713144487"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/example_design/gt_rom_init_tx.dat">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_1/project_1.srcs/sources_1/ip/gtwizard_0/gtwizard_0/example_design/gt_rom_init_tx.dat"/>
+        <Attr Name="ImportTime" Val="1713144487"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/tx.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="mft_final_top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/conb.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/conb.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="vio_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_buf_40"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_cg"/>
+</GenRun>

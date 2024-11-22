@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Aug 27 09:54:00 2024
+# Process ID: 2436
+# Current directory: C:/Users/hp/Desktop/vivado project/MFT/project_official_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20788 C:\Users\hp\Desktop\vivado project\MFT\project_official_1\project_official_1.xpr
+# Log file: C:/Users/hp/Desktop/vivado project/MFT/project_official_1/vivado.log
+# Journal file: C:/Users/hp/Desktop/vivado project/MFT/project_official_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/hp/Desktop/vivado project/MFT/project_official_1/project_official_1.xpr}
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/hp/Desktop/vivado project/MFT/project_official_1/project_official_1.runs/impl_1/mft_final_top.bit} [get_hw_devices xc7k70t_0]
+set_property PROBES.FILE {C:/Users/hp/Desktop/vivado project/MFT/project_official_1/project_official_1.runs/impl_1/mft_final_top.ltx} [get_hw_devices xc7k70t_0]
+set_property FULL_PROBES.FILE {C:/Users/hp/Desktop/vivado project/MFT/project_official_1/project_official_1.runs/impl_1/mft_final_top.ltx} [get_hw_devices xc7k70t_0]
+current_hw_device [get_hw_devices xc7k70t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k70t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k70t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k70t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k70t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k70t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k70t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k70t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k70t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {C:/Users/hp/Desktop/vivado project/MFT/project_official_1/project_official_1.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+open_run synth_1 -name synth_1
+set_property mark_debug false [get_nets [list {data_to_mgt[6]} {data_to_mgt[7]} {data_to_mgt[9]} {data_to_mgt[11]} {data_to_mgt[15]} {data_to_mgt[17]} {data_to_mgt[24]} {data_to_mgt[29]} {data_to_mgt[1]} {data_to_mgt[2]} {data_to_mgt[4]} {data_to_mgt[5]} {data_to_mgt[8]} {data_to_mgt[21]} {data_to_mgt[22]} {data_to_mgt[16]} {data_to_mgt[3]} {data_to_mgt[14]} {data_to_mgt[19]} {data_to_mgt[20]} {data_to_mgt[23]} {data_to_mgt[26]} {data_to_mgt[27]} {data_to_mgt[31]} {data_to_mgt[10]} {data_to_mgt[12]} {data_to_mgt[13]} {data_to_mgt[18]} {data_to_mgt[25]} {data_to_mgt[28]} {data_to_mgt[30]} {data_to_mgt[0]}]]
+set_property mark_debug true [get_nets [list {data_to_mgt[6]} {data_to_mgt[7]} {data_to_mgt[9]} {data_to_mgt[11]} {data_to_mgt[15]} {data_to_mgt[17]} {data_to_mgt[24]} {data_to_mgt[29]} {data_to_mgt[1]} {data_to_mgt[2]} {data_to_mgt[4]} {data_to_mgt[5]} {data_to_mgt[8]} {data_to_mgt[21]} {data_to_mgt[22]} {data_to_mgt[16]} {data_to_mgt[3]} {data_to_mgt[14]} {data_to_mgt[19]} {data_to_mgt[20]} {data_to_mgt[23]} {data_to_mgt[26]} {data_to_mgt[27]} {data_to_mgt[31]} {data_to_mgt[10]} {data_to_mgt[12]} {data_to_mgt[13]} {data_to_mgt[18]} {data_to_mgt[25]} {data_to_mgt[28]} {data_to_mgt[30]} {data_to_mgt[0]}]]
+set_property mark_debug true [get_nets [list refclk_875_n_IBUF]]
+set_property mark_debug false [get_nets [list refclk_875_n_IBUF]]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]

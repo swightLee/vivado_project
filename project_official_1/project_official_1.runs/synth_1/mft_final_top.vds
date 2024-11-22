@@ -1,0 +1,759 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Apr 21 11:23:29 2024
+# Process ID: 11820
+# Current directory: C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.runs/synth_1
+# Command line: vivado.exe -log mft_final_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mft_final_top.tcl
+# Log file: C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.runs/synth_1/mft_final_top.vds
+# Journal file: C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source mft_final_top.tcl -notrace
+Command: synth_design -top mft_final_top -part xc7k70tfbg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Device 21-403] Loading part xc7k70tfbg484-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 432 
+WARNING: [Synth 8-2611] redeclaration of ansi port gt0_rxusrclk2_i is not allowed [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:161]
+WARNING: [Synth 8-976] gt0_rxusrclk2_i has already been declared [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:161]
+WARNING: [Synth 8-2654] second declaration of gt0_rxusrclk2_i ignored [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:161]
+INFO: [Synth 8-994] gt0_rxusrclk2_i is declared here [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:32]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 821.531 ; gain = 185.180
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mft_final_top' [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/mft_final_top.v:14]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/mft_final_top.v:72]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/mft_final_top.v:73]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32871]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: TRUE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: LVDS_25 - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (1#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32871]
+INFO: [Synth 8-6157] synthesizing module 'clk_40_buf' [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/clk_40_ buf.v:4]
+INFO: [Synth 8-6157] synthesizing module 'clk_buf_40' [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.runs/synth_1/.Xil/Vivado-11820-BEPC/realtime/clk_buf_40_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_buf_40' (2#1) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.runs/synth_1/.Xil/Vivado-11820-BEPC/realtime/clk_buf_40_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_40_buf' (3#1) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/clk_40_ buf.v:4]
+INFO: [Synth 8-6157] synthesizing module 'control_and_state' [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/control_and_state.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'control_and_state' (4#1) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/control_and_state.v:2]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/mft_final_top.v:109]
+INFO: [Synth 8-6157] synthesizing module 'test_data_generator' [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/test_data_generator.v:4]
+INFO: [Synth 8-3876] $readmem data file 'gt_rom_init_tx.dat' is read successfully [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/test_data_generator.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tx_data_ram_r_reg' and it is trimmed from '80' to '48' bits. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/test_data_generator.v:83]
+INFO: [Synth 8-6155] done synthesizing module 'test_data_generator' (5#1) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/test_data_generator.v:4]
+WARNING: [Synth 8-689] width (1) of port connection 'TXCTRL_OUT' does not match port width (8) of module 'test_data_generator' [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/mft_final_top.v:138]
+INFO: [Synth 8-6157] synthesizing module 'hits_buffer_stretch' [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/hits_buffer_stretch.v:21]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS32_LVDS_25_DT' [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS32_LVDS_25_DT.v:21]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_LVDS_25_DT' [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS__parameterized0' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32871]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: TRUE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: LVDS_25_DT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS__parameterized0' (5#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32871]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_LVDS_25_DT' (6#1) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_LVDS_25_DT_INV' [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT_INV.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_LVDS_25_DT_INV' (7#1) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT_INV.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS32_LVDS_25_DT' (8#1) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS32_LVDS_25_DT.v:21]
+INFO: [Synth 8-6157] synthesizing module 'stretcher_32b' [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/stretcher_32b.v:6]
+INFO: [Synth 8-6157] synthesizing module 'stretcher' [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/stretcher.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'stretcher' (9#1) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/stretcher.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'stretcher_32b' (10#1) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/stretcher_32b.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'hits_buffer_stretch' (11#1) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/hits_buffer_stretch.v:21]
+INFO: [Synth 8-6157] synthesizing module 'fifo_instantiation' [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/fifo_instantiation.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fifo_cg' [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.runs/synth_1/.Xil/Vivado-11820-BEPC/realtime/fifo_cg_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_cg' (12#1) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.runs/synth_1/.Xil/Vivado-11820-BEPC/realtime/fifo_cg_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_instantiation' (13#1) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/fifo_instantiation.v:3]
+INFO: [Synth 8-6157] synthesizing module 'k_inserter' [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/k_inserter.v:2]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/k_inserter.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'k_inserter' (14#1) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/k_inserter.v:2]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_0_exdes' [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:9]
+	Parameter EXAMPLE_CONFIG_INDEPENDENT_LANES bound to: 1 - type: integer 
+	Parameter EXAMPLE_LANE_WITH_START_CHAR bound to: 0 - type: integer 
+	Parameter EXAMPLE_WORDS_IN_BRAM bound to: 512 - type: integer 
+	Parameter EXAMPLE_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter EXAMPLE_USE_CHIPSCOPE bound to: 1 - type: integer 
+	Parameter STABLE_CLOCK_PERIOD bound to: 8 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:24]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:25]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:42]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:43]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:46]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:47]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:48]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:49]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:50]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:51]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:52]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:53]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:54]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:55]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:91]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:111]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_0_support' [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/support/gtwizard_0_support.v:70]
+	Parameter EXAMPLE_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter STABLE_CLOCK_PERIOD bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_0_GT_USRCLK_SOURCE' [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/support/gtwizard_0_gt_usrclk_source.v:7]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE2' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:33009]
+	Parameter CLKCM_CFG bound to: TRUE - type: string 
+	Parameter CLKRCV_TRST bound to: TRUE - type: string 
+	Parameter CLKSWING_CFG bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE2' (15#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:33009]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (16#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0_GT_USRCLK_SOURCE' (17#1) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/support/gtwizard_0_gt_usrclk_source.v:7]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_0_common' [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/support/gtwizard_0_common.v:8]
+	Parameter WRAPPER_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter SIM_QPLLREFCLK_SEL bound to: 3'b001 
+	Parameter QPLL_FBDIV_TOP bound to: 16 - type: integer 
+	Parameter QPLL_FBDIV_IN bound to: 10'b0000100000 
+	Parameter QPLL_FBDIV_RATIO bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'GTXE2_COMMON' [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:21947]
+	Parameter BIAS_CFG bound to: 64'b0000000000000000000001000000000000000000000000000001000000000000 
+	Parameter COMMON_CFG bound to: 0 - type: integer 
+	Parameter IS_DRPCLK_INVERTED bound to: 1'b0 
+	Parameter IS_GTGREFCLK_INVERTED bound to: 1'b0 
+	Parameter IS_QPLLLOCKDETCLK_INVERTED bound to: 1'b0 
+	Parameter QPLL_CFG bound to: 27'b000011010000000000111000001 
+	Parameter QPLL_CLKOUT_CFG bound to: 4'b0000 
+	Parameter QPLL_COARSE_FREQ_OVRD bound to: 6'b010000 
+	Parameter QPLL_COARSE_FREQ_OVRD_EN bound to: 1'b0 
+	Parameter QPLL_CP bound to: 10'b0000011111 
+	Parameter QPLL_CP_MONITOR_EN bound to: 1'b0 
+	Parameter QPLL_DMONITOR_SEL bound to: 1'b0 
+	Parameter QPLL_FBDIV bound to: 10'b0000100000 
+	Parameter QPLL_FBDIV_MONITOR_EN bound to: 1'b0 
+	Parameter QPLL_FBDIV_RATIO bound to: 1'b1 
+	Parameter QPLL_INIT_CFG bound to: 24'b000000000000000000000110 
+	Parameter QPLL_LOCK_CFG bound to: 16'b0010000111101000 
+	Parameter QPLL_LPF bound to: 4'b1111 
+	Parameter QPLL_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter SIM_QPLLREFCLK_SEL bound to: 3'b001 
+	Parameter SIM_RESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter SIM_VERSION bound to: 4.0 - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'GTXE2_COMMON' (18#1) [E:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:21947]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0_common' (19#1) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/support/gtwizard_0_common.v:8]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_0_common_reset' [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/support/gtwizard_0_common_reset.v:9]
+	Parameter STABLE_CLOCK_PERIOD bound to: 8 - type: integer 
+	Parameter STARTUP_DELAY bound to: 500 - type: integer 
+	Parameter WAIT_CYCLES bound to: 62 - type: integer 
+	Parameter WAIT_MAX bound to: 72 - type: integer 
+	Parameter INIT bound to: 1'b0 
+	Parameter ASSERT_COMMON_RESET bound to: 1'b1 
+INFO: [Synth 8-226] default block is never used [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/support/gtwizard_0_common_reset.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0_common_reset' (20#1) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/support/gtwizard_0_common_reset.v:9]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_0' [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.runs/synth_1/.Xil/Vivado-11820-BEPC/realtime/gtwizard_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0' (21#1) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.runs/synth_1/.Xil/Vivado-11820-BEPC/realtime/gtwizard_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0_support' (22#1) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/support/gtwizard_0_support.v:70]
+INFO: [Synth 8-6157] synthesizing module 'vio_0' [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.runs/synth_1/.Xil/Vivado-11820-BEPC/realtime/vio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vio_0' (23#1) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.runs/synth_1/.Xil/Vivado-11820-BEPC/realtime/vio_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'gtwizard_0_support_i'. This will prevent further optimization [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:309]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_gt_inst'. This will prevent further optimization [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:582]
+WARNING: [Synth 8-3848] Net gt0_track_data_i in module/entity gtwizard_0_exdes does not have driver. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:178]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0_exdes' (24#1) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:9]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'INST_K_INSERTER'. This will prevent further optimization [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/mft_final_top.v:166]
+WARNING: [Synth 8-3848] Net refclk_locked in module/entity mft_final_top does not have driver. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/mft_final_top.v:67]
+WARNING: [Synth 8-3848] Net tx_buffer_err in module/entity mft_final_top does not have driver. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/mft_final_top.v:67]
+WARNING: [Synth 8-3848] Net stretch_rst in module/entity mft_final_top does not have driver. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/mft_final_top.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'mft_final_top' (25#1) [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/mft_final_top.v:14]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 862.777 ; gain = 226.426
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 862.777 ; gain = 226.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 862.777 ; gain = 226.426
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT.v:32]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT.v:32]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT.v:32]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT.v:32]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT.v:32]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT.v:32]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT.v:32]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT.v:32]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT.v:32]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT.v:32]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT.v:32]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT.v:32]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT_INV.v:10]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT.v:32]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT.v:32]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT_INV.v:10]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT_INV.v:10]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT_INV.v:10]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT_INV.v:10]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT_INV.v:10]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT_INV.v:10]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT_INV.v:10]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT_INV.v:10]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT_INV.v:10]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT_INV.v:10]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT_INV.v:10]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT_INV.v:10]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT_INV.v:10]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT_INV.v:10]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT_INV.v:10]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT_INV.v:10]
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/new/IBUFDS_LVDS_25_DT_INV.v:10]
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/ip/gtwizard_0/gtwizard_0/gtwizard_0_in_context.xdc] for cell 'inst_gt/gtwizard_0_support_i/gtwizard_0_init_i'
+Finished Parsing XDC File [c:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/ip/gtwizard_0/gtwizard_0/gtwizard_0_in_context.xdc] for cell 'inst_gt/gtwizard_0_support_i/gtwizard_0_init_i'
+Parsing XDC File [c:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/ip/vio_0/vio_0/vio_0_in_context.xdc] for cell 'inst_gt/vio_gt_inst'
+Finished Parsing XDC File [c:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/ip/vio_0/vio_0/vio_0_in_context.xdc] for cell 'inst_gt/vio_gt_inst'
+Parsing XDC File [c:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/ip/clk_buf_40/clk_buf_40/clk_buf_40_in_context.xdc] for cell 'INST_CLK_BUF/instance_name'
+Finished Parsing XDC File [c:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/ip/clk_buf_40/clk_buf_40/clk_buf_40_in_context.xdc] for cell 'INST_CLK_BUF/instance_name'
+Parsing XDC File [c:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/ip/fifo_cg/fifo_cg/fifo_cg_in_context.xdc] for cell 'INST_FIFO/INST_FIFO_CG'
+Finished Parsing XDC File [c:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/sources_1/ip/fifo_cg/fifo_cg/fifo_cg_in_context.xdc] for cell 'INST_FIFO/INST_FIFO_CG'
+Parsing XDC File [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/constrs_1/new/conb.xdc]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {NAME =~ *reset_on_error_in_r*}'. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/constrs_1/new/conb.xdc:53]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter REF_PIN_NAME=~*D -of_objects [get_cells -hierarchical -filter {NAME =~ *reset_on_error_in_r*}]'. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/constrs_1/new/conb.xdc:53]
+WARNING: [Vivado 12-507] No nets matched 'INST_HITS_BUF_STRETCHER/HITS_BUFFER_INST/inst00/out_hit0_OBUF'. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/constrs_1/new/conb.xdc:241]
+WARNING: [Vivado 12-507] No nets matched 'INST_CLK_BUF/instance_name/inst/clk_in1_clk_buf_40'. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/constrs_1/new/conb.xdc:242]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: INST_CLK_BUF/clk_in). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/constrs_1/new/conb.xdc:261]
+WARNING: [Vivado 12-507] No nets matched 'clk_in'. [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/constrs_1/new/conb.xdc:262]
+Finished Parsing XDC File [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/constrs_1/new/conb.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/constrs_1/new/conb.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/mft_final_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.srcs/constrs_1/new/conb.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mft_final_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mft_final_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1007.059 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1007.059 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'inst_gt/vio_gt_inst' at clock pin 'clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1009.098 ; gain = 372.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1009.098 ; gain = 372.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst_gt/gtwizard_0_support_i/gtwizard_0_init_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst_gt/vio_gt_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for INST_CLK_BUF/instance_name. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for INST_FIFO/INST_FIFO_CG. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1009.098 ; gain = 372.746
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "rom" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1009.098 ; gain = 372.746
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 35    
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 34    
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 147   
++---Muxes : 
+	 513 Input     80 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   5 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     29 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module control_and_state 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module test_data_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	 513 Input     80 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module stretcher 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
+Module fifo_instantiation 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module k_inserter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   5 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     29 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module gtwizard_0_common_reset 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module gtwizard_0_exdes 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[16]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[32]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\INST_TEST_GENERATOR/prbs_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\INST_TEST_GENERATOR/prbs_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\INST_TEST_GENERATOR/prbs_reg[2] )
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/prbs_reg[3]' (FDR) to 'INST_TEST_GENERATOR/prbs_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\INST_TEST_GENERATOR/prbs_reg[4] )
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/prbs_reg[5]' (FDR) to 'INST_TEST_GENERATOR/prbs_reg[2]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[22]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[47]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[15]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[47]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[14]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[47]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[13]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[47]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[12]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[47]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[11]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[47]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[10]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[47]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[9]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[47]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[8]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[47]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[7]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[47]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[6]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[47]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[5]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[47]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[4]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[47]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[3]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[47]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[2]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[47]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[1]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[47]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[0]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[47]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/prbs_reg[6]' (FDR) to 'INST_TEST_GENERATOR/prbs_reg[4]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[23]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[47]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\INST_TEST_GENERATOR/prbs_reg[7] )
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[24]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[40]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/prbs_reg[8]' (FDR) to 'INST_TEST_GENERATOR/prbs_reg[2]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[25]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[47]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/prbs_reg[9]' (FDR) to 'INST_TEST_GENERATOR/prbs_reg[4]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[26]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[34]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/prbs_reg[10]' (FDR) to 'INST_TEST_GENERATOR/prbs_reg[7]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[27]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[35]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\INST_TEST_GENERATOR/prbs_reg[11] )
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[28]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[36]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/prbs_reg[12]' (FDR) to 'INST_TEST_GENERATOR/prbs_reg[2]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[29]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[37]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/prbs_reg[13]' (FDR) to 'INST_TEST_GENERATOR/prbs_reg[4]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[30]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[47]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/prbs_reg[14]' (FDR) to 'INST_TEST_GENERATOR/prbs_reg[7]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[31]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[47]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/prbs_reg[15]' (FDR) to 'INST_TEST_GENERATOR/prbs_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\INST_TEST_GENERATOR/prbs_reg[16] )
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/prbs_reg[17]' (FDR) to 'INST_TEST_GENERATOR/prbs_reg[2]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[34]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[42]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/prbs_reg[18]' (FDR) to 'INST_TEST_GENERATOR/prbs_reg[4]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[35]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[43]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/prbs_reg[19]' (FDR) to 'INST_TEST_GENERATOR/prbs_reg[7]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[36]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[44]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/prbs_reg[20]' (FDR) to 'INST_TEST_GENERATOR/prbs_reg[11]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[37]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[45]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/prbs_reg[21]' (FDR) to 'INST_TEST_GENERATOR/prbs_reg[16]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[38]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[47]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\INST_TEST_GENERATOR/prbs_reg[22] )
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[39]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[47]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/prbs_reg[23]' (FDR) to 'INST_TEST_GENERATOR/prbs_reg[2]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/prbs_reg[24]' (FDR) to 'INST_TEST_GENERATOR/prbs_reg[4]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/prbs_reg[25]' (FDR) to 'INST_TEST_GENERATOR/prbs_reg[7]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/prbs_reg[26]' (FDR) to 'INST_TEST_GENERATOR/prbs_reg[11]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/prbs_reg[27]' (FDR) to 'INST_TEST_GENERATOR/prbs_reg[16]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/prbs_reg[28]' (FDR) to 'INST_TEST_GENERATOR/prbs_reg[22]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\INST_TEST_GENERATOR/prbs_reg[29] )
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/tx_data_ram_r_reg[46]' (FD) to 'INST_TEST_GENERATOR/tx_data_ram_r_reg[47]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/prbs_reg[30]' (FDR) to 'INST_TEST_GENERATOR/prbs_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\INST_TEST_GENERATOR/tx_data_ram_r_reg[47] )
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/prbs_reg[31]' (FDR) to 'INST_TEST_GENERATOR/prbs_reg[4]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/TEST_DATA_reg[0]' (FDE) to 'INST_TEST_GENERATOR/TEST_DATA_reg[16]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/TEST_DATA_reg[6]' (FDE) to 'INST_TEST_GENERATOR/TEST_DATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/TEST_DATA_reg[7]' (FDE) to 'INST_TEST_GENERATOR/TEST_DATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/TEST_DATA_reg[8]' (FDE) to 'INST_TEST_GENERATOR/TEST_DATA_reg[24]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/TEST_DATA_reg[9]' (FDE) to 'INST_TEST_GENERATOR/TEST_DATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/TEST_DATA_reg[10]' (FDE) to 'INST_TEST_GENERATOR/TEST_DATA_reg[18]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/TEST_DATA_reg[11]' (FDE) to 'INST_TEST_GENERATOR/TEST_DATA_reg[19]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/TEST_DATA_reg[12]' (FDE) to 'INST_TEST_GENERATOR/TEST_DATA_reg[20]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/TEST_DATA_reg[13]' (FDE) to 'INST_TEST_GENERATOR/TEST_DATA_reg[21]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/TEST_DATA_reg[14]' (FDE) to 'INST_TEST_GENERATOR/TEST_DATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/TEST_DATA_reg[15]' (FDE) to 'INST_TEST_GENERATOR/TEST_DATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/TEST_DATA_reg[18]' (FDE) to 'INST_TEST_GENERATOR/TEST_DATA_reg[26]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/TEST_DATA_reg[19]' (FDE) to 'INST_TEST_GENERATOR/TEST_DATA_reg[27]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/TEST_DATA_reg[20]' (FDE) to 'INST_TEST_GENERATOR/TEST_DATA_reg[28]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/TEST_DATA_reg[21]' (FDE) to 'INST_TEST_GENERATOR/TEST_DATA_reg[29]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/TEST_DATA_reg[22]' (FDE) to 'INST_TEST_GENERATOR/TEST_DATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/TEST_DATA_reg[23]' (FDE) to 'INST_TEST_GENERATOR/TEST_DATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'INST_TEST_GENERATOR/TEST_DATA_reg[30]' (FDE) to 'INST_TEST_GENERATOR/TEST_DATA_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\INST_TEST_GENERATOR/TEST_DATA_reg[31] )
+INFO: [Synth 8-3886] merging instance 'INST_K_INSERTER/DATA_OR_K_reg[0]' (FDR) to 'INST_K_INSERTER/DATA_OR_K_reg[2]'
+INFO: [Synth 8-3886] merging instance 'INST_K_INSERTER/DATA_OR_K_reg[1]' (FDR) to 'INST_K_INSERTER/DATA_OR_K_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (INST_K_INSERTER/\DATA_OR_K_reg[2] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1009.098 ; gain = 372.746
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'inst_gt/gtwizard_0_support_i/gtwizard_0_init_i/gt0_rxoutclkfabric_out' to pin 'inst_gt/gtwizard_0_support_i/gtwizard_0_init_i/bbstub_gt0_rxoutclkfabric_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'inst_gt/gtwizard_0_support_i/gtwizard_0_init_i/gt0_txoutclk_out' to pin 'inst_gt/gtwizard_0_support_i/gtwizard_0_init_i/bbstub_gt0_txoutclk_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'inst_gt/gtwizard_0_support_i/gtwizard_0_init_i/gt0_txoutclkfabric_out' to pin 'inst_gt/gtwizard_0_support_i/gtwizard_0_init_i/bbstub_gt0_txoutclkfabric_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'INST_CLK_BUF/instance_name/clk_in1' to pin 'IBUFDS_inst/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'INST_CLK_BUF/instance_name/clk_out1' to pin 'INST_CLK_BUF/instance_name/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'INST_CLK_BUF/instance_name/clk_in1' to 'IBUFDS_inst/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'INST_CLK_BUF/instance_name/clk_out2' to pin 'INST_CLK_BUF/instance_name/bbstub_clk_out2/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'INST_CLK_BUF/instance_name/clk_in1' to 'IBUFDS_inst/O'
+INFO: [Synth 8-5819] Moved 6 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1009.098 ; gain = 372.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1009.098 ; gain = 372.746
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1009.098 ; gain = 372.746
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin i_8:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin i_9:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtwizard_0_support_i:gt0_data_valid_in to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gt_txfsmresetdone_r_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gt_txfsmresetdone_r2_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gt0_rxfsmresetdone_r_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gt0_rxfsmresetdone_r2_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gt0_rxresetdone_vio_r_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gt0_rxresetdone_vio_r2_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gt0_rxresetdone_vio_r3_inferred:in0 to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1009.098 ; gain = 372.746
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1009.098 ; gain = 372.746
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1009.098 ; gain = 372.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1009.098 ; gain = 372.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1009.098 ; gain = 372.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1009.098 ; gain = 372.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |gtwizard_0    |         1|
+|2     |vio_0         |         1|
+|3     |clk_buf_40    |         1|
+|4     |fifo_cg       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |clk_buf_40   |     1|
+|2     |fifo_cg      |     1|
+|3     |gtwizard_0   |     1|
+|4     |vio_0        |     1|
+|5     |BUFG         |     1|
+|6     |GTXE2_COMMON |     1|
+|7     |IBUFDS_GTE2  |     1|
+|8     |LUT1         |    15|
+|9     |LUT2         |     7|
+|10    |LUT3         |    10|
+|11    |LUT4         |    12|
+|12    |LUT5         |     5|
+|13    |LUT6         |     6|
+|14    |FDCE         |     5|
+|15    |FDRE         |    79|
+|16    |FDSE         |    17|
+|17    |IBUF         |     7|
+|18    |IBUFDS       |    33|
+|19    |IOBUF        |     8|
+|20    |OBUF         |     8|
+|21    |OBUFT        |     8|
++------+-------------+------+
+
+Report Instance Areas: 
++------+--------------------------+----------------------------+------+
+|      |Instance                  |Module                      |Cells |
++------+--------------------------+----------------------------+------+
+|1     |top                       |                            |   360|
+|2     |  INST_K_INSERTER         |k_inserter                  |    52|
+|3     |  inst_gt                 |gtwizard_0_exdes            |   113|
+|4     |    gtwizard_0_support_i  |gtwizard_0_support          |    98|
+|5     |      common0_i           |gtwizard_0_common           |     1|
+|6     |      gt_usrclk_source    |gtwizard_0_GT_USRCLK_SOURCE |     2|
+|7     |  INST_CLK_BUF            |clk_40_buf                  |     3|
+|8     |  INST_CONTROL_STATE      |control_and_state           |    34|
+|9     |  INST_FIFO               |fifo_instantiation          |    43|
+|10    |  INST_HITS_BUF_STRETCHER |hits_buffer_stretch         |    32|
+|11    |    HITS_BUFFER_INST      |IBUFDS32_LVDS_25_DT         |    32|
+|12    |      inst00              |IBUFDS_LVDS_25_DT           |     1|
+|13    |      inst01              |IBUFDS_LVDS_25_DT_0         |     1|
+|14    |      inst02              |IBUFDS_LVDS_25_DT_1         |     1|
+|15    |      inst03              |IBUFDS_LVDS_25_DT_2         |     1|
+|16    |      inst04              |IBUFDS_LVDS_25_DT_3         |     1|
+|17    |      inst05              |IBUFDS_LVDS_25_DT_4         |     1|
+|18    |      inst06              |IBUFDS_LVDS_25_DT_5         |     1|
+|19    |      inst07              |IBUFDS_LVDS_25_DT_6         |     1|
+|20    |      inst08              |IBUFDS_LVDS_25_DT_7         |     1|
+|21    |      inst09              |IBUFDS_LVDS_25_DT_8         |     1|
+|22    |      inst10              |IBUFDS_LVDS_25_DT_9         |     1|
+|23    |      inst11              |IBUFDS_LVDS_25_DT_10        |     1|
+|24    |      inst12              |IBUFDS_LVDS_25_DT_INV       |     1|
+|25    |      inst13              |IBUFDS_LVDS_25_DT_11        |     1|
+|26    |      inst14              |IBUFDS_LVDS_25_DT_12        |     1|
+|27    |      inst15              |IBUFDS_LVDS_25_DT_INV_13    |     1|
+|28    |      inst16              |IBUFDS_LVDS_25_DT_INV_14    |     1|
+|29    |      inst17              |IBUFDS_LVDS_25_DT_INV_15    |     1|
+|30    |      inst18              |IBUFDS_LVDS_25_DT_INV_16    |     1|
+|31    |      inst19              |IBUFDS_LVDS_25_DT_INV_17    |     1|
+|32    |      inst20              |IBUFDS_LVDS_25_DT_INV_18    |     1|
+|33    |      inst21              |IBUFDS_LVDS_25_DT_INV_19    |     1|
+|34    |      inst22              |IBUFDS_LVDS_25_DT_INV_20    |     1|
+|35    |      inst23              |IBUFDS_LVDS_25_DT_INV_21    |     1|
+|36    |      inst24              |IBUFDS_LVDS_25_DT_INV_22    |     1|
+|37    |      inst25              |IBUFDS_LVDS_25_DT_INV_23    |     1|
+|38    |      inst26              |IBUFDS_LVDS_25_DT_INV_24    |     1|
+|39    |      inst27              |IBUFDS_LVDS_25_DT_INV_25    |     1|
+|40    |      inst28              |IBUFDS_LVDS_25_DT_INV_26    |     1|
+|41    |      inst29              |IBUFDS_LVDS_25_DT_INV_27    |     1|
+|42    |      inst30              |IBUFDS_LVDS_25_DT_INV_28    |     1|
+|43    |      inst31              |IBUFDS_LVDS_25_DT_INV_29    |     1|
+|44    |  INST_TEST_GENERATOR     |test_data_generator         |    49|
++------+--------------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1009.098 ; gain = 372.746
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1009.098 ; gain = 226.426
+Synthesis Optimization Complete : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1009.098 ; gain = 372.746
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 41 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+WARNING: [Constraints 18-548] Could not create 'IOSTANDARD' constraint because invalid IOSTANDARD value 'LVDS_25_DT' specified. The default IOSTANDARD will be used instead. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1011.953 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+190 Infos, 92 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:21 . Memory (MB): peak = 1011.953 ; gain = 623.258
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1011.953 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.runs/synth_1/mft_final_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mft_final_top_utilization_synth.rpt -pb mft_final_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 21 11:24:07 2024...

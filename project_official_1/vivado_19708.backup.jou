@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Aug 27 09:40:44 2024
+# Process ID: 19708
+# Current directory: C:/Users/hp/Desktop/研二/MFT/project_official_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12700 C:\Users\hp\Desktop\研二\MFT\project_official_1\project_official_1.xpr
+# Log file: C:/Users/hp/Desktop/研二/MFT/project_official_1/vivado.log
+# Journal file: C:/Users/hp/Desktop/研二/MFT/project_official_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/hp/Desktop/研二/MFT/project_official_1/project_official_1.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/hp/Desktop/研二/MFT/project_official_1/project_official_1.runs/impl_1/mft_final_top.bit} [get_hw_devices xc7k70t_0]
+set_property PROBES.FILE {C:/Users/hp/Desktop/研二/MFT/project_official_1/project_official_1.runs/impl_1/mft_final_top.ltx} [get_hw_devices xc7k70t_0]
+set_property FULL_PROBES.FILE {C:/Users/hp/Desktop/研二/MFT/project_official_1/project_official_1.runs/impl_1/mft_final_top.ltx} [get_hw_devices xc7k70t_0]
+current_hw_device [get_hw_devices xc7k70t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k70t_0] 0]

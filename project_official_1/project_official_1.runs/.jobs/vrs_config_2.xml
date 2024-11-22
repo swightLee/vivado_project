@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="synth_1" LaunchDir="D:/BES upgradePHD/MFT_all_file/Firmware_file/mft_vhdl_project/mft_k7_project/test_all_project_v1.6_Apr_12_2024/project_official_1/project_official_1.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="impl_1" LaunchDir="D:/BES upgradePHD/MFT_all_file/Firmware_file/mft_vhdl_project/mft_k7_project/test_all_project_v1.6_Apr_12_2024/project_official_1/project_official_1.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

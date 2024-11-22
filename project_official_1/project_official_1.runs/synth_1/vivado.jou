@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Apr 21 11:23:29 2024
+# Process ID: 11820
+# Current directory: C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.runs/synth_1
+# Command line: vivado.exe -log mft_final_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mft_final_top.tcl
+# Log file: C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.runs/synth_1/mft_final_top.vds
+# Journal file: C:/Users/44497/Desktop/mft_k7_project/test_all_pro_4.12/project_official_1/project_official_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source mft_final_top.tcl -notrace
